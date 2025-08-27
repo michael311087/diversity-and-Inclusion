@@ -43,8 +43,6 @@ color: var(--primary-light) !important;
 	color: var(--primary-light) !important;
 }
 
-<<<<<<< HEAD
-=======
 /* Section Header Gradient Text */
 .section-header-gradient {
 	background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
@@ -55,15 +53,12 @@ color: var(--primary-light) !important;
 	font-family: 'Merienda', cursive;
 }
 
->>>>>>> newbranch
 /* Custom Hero Styles */
 .custom-hero {
 	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
 	color: var(--primary-light);
 }
 
-<<<<<<< HEAD
-=======
 /* Carousel Styles */
 .carousel-inner img {
 	border-radius: 1rem;
@@ -75,7 +70,6 @@ color: var(--primary-light) !important;
 	padding: 1rem;
 }
 
->>>>>>> newbranch
 /* Card and List Styles */
 .card {
 	background: var(--primary-light);
@@ -84,32 +78,20 @@ color: var(--primary-light) !important;
 }
 .card-body {
 	color: var(--primary-text);
-<<<<<<< HEAD
-=======
 	width: 636px;
 	height: 636px;
->>>>>>> newbranch
 }
 .card:hover {
 	box-shadow: 0 6px 24px rgba(33,147,176,0.18), 0 1.5px 6px rgba(109,213,237,0.12);
 	transform: translateY(-4px) scale(1.03);
 	border-color: var(--primary-gradient-end);
-<<<<<<< HEAD
-=======
 	background: #e3f6fd;
->>>>>>> newbranch
 }
 .list-group-item {
 	background: var(--primary-light);
 	color: var(--primary-text);
 }
 
-<<<<<<< HEAD
-/* footer */
-.footer {
-	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
-	color: var(--primary-light);
-=======
 /* Footer Styles */
 .footer {
 	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
@@ -147,7 +129,7 @@ color: var(--primary-light) !important;
 	.card {
 		background: #232526;
 		color: var(--primary-text);
-		border-color
+		border-color: var(--primary-gradient-end);
 	}
 	.card:hover {
 		background: #333;
@@ -304,5 +286,4 @@ color: var(--primary-light) !important;
   .custom-hero {
     padding: 1.5rem 0;
   }
->>>>>>> newbranch
 }
