@@ -7,6 +7,16 @@
 	--primary-text: #222;
 }
 
+/* Section Header Gradient Text */
+.section-header-gradient {
+	background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	color: transparent;
+	font-family: 'Merienda', cursive;
+}
+
 /* Custom Navbar Styles */
 .custom-navbar {
 	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
