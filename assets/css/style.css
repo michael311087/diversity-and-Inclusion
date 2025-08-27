@@ -27,3 +27,28 @@ color: var(--primary-light) !important;
 	text-decoration: underline;
 	color: var(--primary-light) !important;
 }
+
+/* Custom Hero Styles */
+.custom-hero {
+	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
+	color: var(--primary-light);
+}
+
+/* Card and List Styles */
+.card {
+	background: var(--primary-light);
+	color: var(--primary-text);
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+.card-body {
+	color: var(--primary-text);
+}
+.card:hover {
+	box-shadow: 0 6px 24px rgba(33,147,176,0.18), 0 1.5px 6px rgba(109,213,237,0.12);
+	transform: translateY(-4px) scale(1.03);
+	border-color: var(--primary-gradient-end);
+}
+.list-group-item {
+	background: var(--primary-light);
+	color: var(--primary-text);
+}
