@@ -14,6 +14,7 @@ This README is being updated as the project develops. Current progress includes:
 ---
 
 **Notes for future updates:**
+
 - Add more content to each section as the project grows.
 - Expand CSS for improved accessibility and design.
 - Document any new features or changes as they are added.
