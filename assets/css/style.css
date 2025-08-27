@@ -6,3 +6,24 @@
 	--primary-light: #fff;
 	--primary-text: #222;
 }
+
+/* Custom Navbar Styles */
+.custom-navbar {
+	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
+	color: var(--primary-light);
+}
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+color: var(--primary-light) !important;
+	font-weight: bold;
+}
+.custom-navbar .nav-link.active {
+	color: var(--primary-text) !important;
+	font-weight: 700;
+	background: none;
+	text-decoration: underline;
+}
+.custom-navbar .nav-link:hover {
+	text-decoration: underline;
+	color: var(--primary-light) !important;
+}
