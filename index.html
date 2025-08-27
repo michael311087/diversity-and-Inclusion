@@ -24,6 +24,7 @@
 					<li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
 					<li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
 				</ul>
+				<button id="darkModeToggle" class="btn btn-outline-light ms-3" type="button">Toggle Dark Mode</button>
 			</div>
 		</div>
 	</nav>
@@ -79,7 +80,118 @@
 				</button>
 			</div>
 		</div>
+		</div> <!-- Close container for heroCarousel -->
+	</header>
+    <!-- Principles Section -->
+	<section id="principles" class="container mb-5">
+		<div class="row g-4 align-items-center">
+			<div class="col-md-6">
+				<div class="card h-100 shadow-sm flex-grow-1 w-100">
+					<div class="card-body">
+						<h3 class="card-title section-header-gradient" style="font-family: 'Merienda', cursive;">What is Diversity?</h3>
+						<p class="card-text">Diversity means having people from different backgrounds, cultures, genders, ages, abilities, and perspectives. It includes visible differences (like race, gender) and invisible ones (like beliefs, experiences).</p>
+						<ul class="list-group list-group-flush mb-3">
+							<li class="list-group-item">Diversity can be seen in the languages we speak, the foods we eat, and the traditions we celebrate.</li>
+							<li class="list-group-item">It’s reflected in our unique life stories, interests, and ways of thinking.</li>
+							<li class="list-group-item">For example, a classroom or workplace with people from different countries, age groups, and abilities is more diverse.</li>
+							<li class="list-group-item">Diversity also means respecting and valuing these differences, not just noticing them.</li>
+							<li class="list-group-item">Diversity includes people with different learning styles, personalities, and talents, which enriches group experiences.</li>
+							<li class="list-group-item">It can be as simple as having classmates who celebrate different holidays, speak different languages at home, or have different hobbies.</li>
+							<li class="list-group-item">Diversity helps us learn from each other and prepares us to work with people from all walks of life.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<img src="assets/images/what is diversity img.jpeg" alt="Diversity illustration" class="img-fluid" style="width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 2px 8px rgba(33,147,176,0.12); object-fit: cover;">
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-12">
+				<div class="card shadow-sm">
+					<div class="card-body">
+						<h3 class="card-title section-header-gradient" style="font-family: 'Merienda', cursive;">Why is Diversity & Inclusion Important?</h3>
+						<ul class="list-group list-group-flush mb-0">
+							<li class="list-group-item">Leads to better ideas and problem-solving. When people with different experiences work together, they find creative solutions.</li>
+							<li class="list-group-item">Improves teamwork and morale. People feel happier and more motivated when they know they belong.</li>
+							<li class="list-group-item">Reflects the real world and helps everyone feel welcome. Diverse groups prepare us for working and living in a global society.</li>
+							<li class="list-group-item">Encourages learning and growth. Exposure to new perspectives helps us learn and grow as individuals.</li>
+							<li class="list-group-item">Reduces discrimination and bias. Inclusive environments challenge stereotypes and promote fairness.</li>
+							<li class="list-group-item">For example, companies with diverse teams often perform better and schools that value inclusion help all students succeed.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Tips Section -->
+	<section id="tips" class="container mb-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="card shadow-sm border-0">
+					<div class="card-body">
+						<h3 class="card-title mb-4 section-header-gradient" style="font-family: 'Merienda', cursive;">Simple Tips for Promoting Diversity & Inclusion</h3>
+						<ol class="list-group list-group-numbered mb-0">
+							<li class="list-group-item"><strong>Listen to Others:</strong> Encourage open conversations and respect different viewpoints.</li>
+							<li class="list-group-item"><strong>Challenge Bias:</strong> Be aware of stereotypes and avoid making assumptions.</li>
+							<li class="list-group-item"><strong>Celebrate Differences:</strong> Recognize and appreciate cultural events, holidays, and traditions.</li>
+							<li class="list-group-item"><strong>Use Inclusive Language:</strong> Avoid terms that exclude or offend others.</li>
+							<li class="list-group-item"><strong>Support Equal Opportunities:</strong> Ensure fair access to resources, roles, and advancement.</li>
+							<li class="list-group-item"><strong>Educate Yourself:</strong> Learn about different cultures, backgrounds, and experiences.</li>
+							<li class="list-group-item"><strong>Speak Up:</strong> If you see unfair treatment, address it respectfully.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Resources Section -->
+	<section id="resources" class="container mb-5">
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<div class="card shadow-sm border-0">
+					<div class="card-body text-center">
+						<h3 class="card-title mb-4 section-header-gradient" style="font-family: 'Merienda', cursive;">Explore More Resources</h3>
+						<a href="https://www.diversityresources.com/" target="_blank" class="btn btn-primary m-2">Diversity Resources</a>
+						<a href="https://www.inclusionhub.com/" target="_blank" class="btn btn-success m-2">Inclusion Hub</a>
+						<a href="https://www.edutopia.org/article/creating-inclusive-classroom" target="_blank" class="btn btn-info m-2">Inclusive Classroom Guide</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Footer -->
+	<footer id="footer" class="footer mt-auto py-3 text-white fixed-bottom">
+		<div class="container text-center">
+			<span class="small">&copy; 2025 Diversity & Inclusion Guide. All rights reserved.</span>
+		</div>
+	</footer>
+
     <!--Js Bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script>
+      // Dark mode toggle
+      const toggleBtn = document.getElementById('darkModeToggle');
+      toggleBtn.addEventListener('click', function() {
+        document.body.classList.toggle('manual-dark');
+        if(document.body.classList.contains('manual-dark')) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      });
+      // Navbar active link update
+      document.querySelectorAll('.custom-navbar .nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          document.querySelectorAll('.custom-navbar .nav-link').forEach(function(nav) {
+            nav.classList.remove('active');
+          });
+          this.classList.add('active');
+        });
+      });
+    </script>
 </body>
 </html>

@@ -7,6 +7,12 @@ This README is being updated as the project develops. Current progress includes:
 - Set up the initial HTML structure with navigation and sections (Home, Principles, Tips, Resources).
 - Linked custom CSS and Bootstrap for styling and responsiveness.
 - Defined basic color variables and started layout styling in `assets/css/style.css`.
+- Added a hero carousel with images and captions.
+- Created detailed sections for Principles, Tips, Resources, and Footer.
+- Implemented custom styles for cards, lists, and headers.
+- Added dark mode support with a toggle button for manual switching.
+- Styled the dark mode toggle button to match navbar link colors.
+- Improved active link color visibility in both light and dark mode.
 
 ---
 
