@@ -1,0 +1,8 @@
+/* Project Color Variables */
+:root {
+	--primary-gradient-start: #6dd5ed;
+	--primary-gradient-end: #2193b0;
+	--primary-dark: #212529;
+	--primary-light: #fff;
+	--primary-text: #222;
+}
