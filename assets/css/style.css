@@ -52,3 +52,9 @@ color: var(--primary-light) !important;
 	background: var(--primary-light);
 	color: var(--primary-text);
 }
+
+/* footer */
+.footer {
+	background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
+	color: var(--primary-light);
+}
