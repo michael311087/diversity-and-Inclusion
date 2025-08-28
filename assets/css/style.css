@@ -10,37 +10,17 @@
 	--primary-text: #222;
 }
 
-<<<<<<< HEAD
-/* Section Header Gradient Text */
-.section-header-gradient {
-	background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	color: transparent;
-=======
 /* Gradient and font styles for section headers and carousel captions */
 .section-header-gradient:not(.card-title),
 .carousel-caption h1,
 .carousel-caption p {
-	background: none !important;
-	-webkit-background-clip: initial !important;
-	-webkit-text-fill-color: #fff !important;
-	background-clip: initial !important;
-	color: #fff !important;
+	color: #fff;
 	text-shadow: 0 2px 8px rgba(0,0,0,0.18);
 	font-family: 'Merienda', cursive;
 }
 .card-title.section-header-gradient {
-	background: none !important;
-	-webkit-background-clip: initial !important;
-	-webkit-text-fill-color: #2193b0 !important;
-	background-clip: initial !important;
-	color: #2193b0 !important;
+	color: #2193b0;
 	text-shadow: 0 2px 8px rgba(33,147,176,0.12);
-	filter: none !important;
-	font-family: 'Merienda', cursive;
->>>>>>> newbranch
 	font-family: 'Merienda', cursive;
 }
 
@@ -81,10 +61,23 @@ color: var(--primary-light) !important;
 }
 
 /* Carousel Styles */
+.carousel-inner {
+	height: 400px;
+	background: #e3f6fd;
+	text-align: center;
+	background-color: var(--primary-gradient-start);
+	background-color: var(--primary-gradient-end);
+}
 .carousel-inner img {
 	border-radius: 1rem;
 	-webkit-box-shadow: 0 4px 16px rgba(33,147,176,0.12);
 	box-shadow: 0 4px 16px rgba(33,147,176,0.12);
+	max-width: 100%;
+	max-height: 400px;
+	object-fit: contain;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .carousel-caption {
 		background: rgba(33,147,176,0.12);
