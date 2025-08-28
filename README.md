@@ -14,12 +14,8 @@ This project is a one-page interactive website that helps users understand diver
 
 ## Features
 
-- Hero section introducing the topic
-- Information sections with key principles
-- List of tips styled with Bootstrap
-- Resource links with button styling
-- Dark mode toggle for accessibility
-- Responsive layout using Bootstrap and custom CSS
+ - Section headers styled for clarity and consistency
+ - Carousel for featured content
 
 ## Deployment
 
@@ -68,9 +64,15 @@ AI tools made development faster and easier. Copilot provided code suggestions, 
 
 ## Recent Updates
 
-- Card sections now display images to the right of the text for a modern, consistent look.
-- Card images are sized for better alignment and visual balance.
-- Added a new image to the Simple Tips card, matching the layout and style of other cards.
-- Carousel images now use `object-fit: contain` and fixed height to ensure the full image is always visible.
-- Section headers have extra padding and scroll margin so anchor navigation (e.g., clicking Principles) always shows the header text.
-- README.md and code reviewed for accessibility, responsiveness, and clarity.
+ - Improved section header styling for consistency
+ - Fixed carousel header color issues
+ - Enhanced mobile responsiveness
+ - Updated card image alignment and scrollable text
+ - Cleaned up CSS and removed duplicate/commented code
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+
+[MIT](LICENSE)
