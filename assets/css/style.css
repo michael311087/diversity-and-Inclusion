@@ -198,14 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Carousel styles */
 /* Highest specificity override for section headers and carousel captions */
-.carousel-caption h1#section-header,
-.carousel-caption h1.section-header-gradient,
 .carousel-caption h1,
-.carousel-caption p,
-#section-header.section-header-gradient,
-#section-header,
-.section-header-gradient,
-.card-title.section-header-gradient {
+.carousel-caption p {
     color: #fff !important;
     text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
     font-family: 'Merienda', cursive, Arial, sans-serif !important;
