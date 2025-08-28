@@ -1,3 +1,48 @@
+.navbar-collapse-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+@media (min-width: 992px) {
+    .navbar-collapse-inner {
+        flex-direction: row;
+        align-items: center;
+    }
+    #darkModeToggle {
+        margin-left: 1rem;
+        margin-top: 0;
+        align-self: center;
+    }
+}
+@media (max-width: 991px) {
+    #darkModeToggle {
+        align-self: flex-end;
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+}
+    display: block;
+    position: static;
+    margin-left: 1rem;
+}
+/* Inline for desktop */
+.burger-toggle-container button {
+        position: static;
+        margin-left: 1rem;
+}
+@media (max-width: 991px) {
+    .navbar-collapse.show .burger-toggle-container {
+        position: fixed;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        z-index: 9999;
+        display: block;
+        margin-left: 0;
+    }
+    .navbar-collapse:not(.show) .burger-toggle-container {
+        display: none;
+    }
+}
 /* Force Merienda font and color for all section headers */
 /* Force Merienda font and color for all section headers */
 /* Removed empty ruleset for section headers */
@@ -152,10 +197,42 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Carousel styles */
+/* Highest specificity override for section headers and carousel captions */
+.carousel-caption h1#section-header,
+.carousel-caption h1.section-header-gradient,
+.carousel-caption h1,
+.carousel-caption p,
+#section-header.section-header-gradient,
+#section-header,
+.section-header-gradient,
+.card-title.section-header-gradient {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
+    font-family: 'Merienda', cursive, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    background: none !important;
+    -webkit-background-clip: initial !important;
+    -webkit-text-fill-color: #fff !important;
+    background-clip: initial !important;
+}
+/* Force white text for carousel captions and section headers on all screen sizes */
+.carousel-caption h1, .carousel-caption p, #section-header, .section-header-gradient, .card-title.section-header-gradient {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
+    font-family: 'Merienda', cursive, Arial, sans-serif !important;
+    font-weight: 700 !important;
+}
 .carousel-caption h1,
 .carousel-caption p {
-    color: #fff;
+    color: #fff !important;
     text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    font-family: 'Merienda', cursive, Arial, sans-serif !important;
+    font-weight: 700 !important;
+    white-space: normal;
+    word-break: break-word;
+    background: none;
+    margin: 0;
+    padding: 0.25rem 0;
 }
 .carousel-inner img {
     object-fit: contain;
@@ -164,6 +241,50 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 400px;
     margin: 0 auto;
     border-radius: 0;
+}
+@media (max-width: 991px) {
+    .carousel-inner img {
+        height: auto;
+        max-height: 220px;
+    }
+    .carousel-caption {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0.5rem 1rem;
+        background: rgba(0,0,0,0.3);
+    }
+    .carousel-caption h1, .carousel-caption p {
+        font-size: 1.1rem;
+    }
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 575px) {
+    .carousel-inner img {
+        height: auto;
+        max-height: 140px;
+    }
+    .carousel-caption {
+        width: 100%;
+        left: 0;
+        right: 0;
+        padding: 0.5rem 0.5rem;
+        background: rgba(0,0,0,0.3);
+    }
+    .carousel-caption h1, .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption h1 {
+        font-size: 1.1rem;
+    }
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
 }
 
 /* Dark mode toggle button styles */
@@ -326,4 +447,11 @@ body[data-theme=\"dark\"] .section-header-gradient {
     -webkit-background-clip: initial !important;
     -webkit-text-fill-color: initial !important;
     background-clip: initial !important;
+    color: #fff !important;
+    .carousel-caption h1, .carousel-caption p {
+        color: #fff !important;
+    }
+    .carousel-caption h1, .carousel-caption p {
+        color: #fff !important;
+    }
 }
