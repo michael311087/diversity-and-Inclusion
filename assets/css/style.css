@@ -126,6 +126,11 @@ color: var(--primary-light) !important;
 	background: #e3f6fd;
 }
 
+#text-hover.list-group-item:hover {
+	color: #1E63FA !important;
+}
+
+
 /* Consistent font size for Explore More Resources bar */
 .resources-bar-title {
 	font-size: 1.25rem !important;
