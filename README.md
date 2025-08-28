@@ -13,6 +13,9 @@ This README is being updated as the project develops. Current progress includes:
 - Added dark mode support with a toggle button for manual switching.
 - Styled the dark mode toggle button to match navbar link colors.
 - Improved active link color visibility in both light and dark mode.
+- Card headers now use the site's main blue for emphasis and readability.
+- Carousel captions are always white for maximum readability on all screen sizes.
+- Dark mode toggle button position is fixed: it only floats on mobile/tablet, and stays inline on large screens.
 
 ---
 
