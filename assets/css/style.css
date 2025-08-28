@@ -15,12 +15,25 @@
     }
 }
 @media (max-width: 991px) {
+    .carousel-caption h1#section-header,
+    .carousel-caption h1,
+    .carousel-caption p {
+        color: #fff !important;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
+        font-family: 'Merienda', cursive, Arial, sans-serif !important;
+        font-weight: 700 !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: #fff !important;
+        background-clip: initial !important;
+    }
     #darkModeToggle {
         align-self: flex-end;
         margin-top: 1rem;
         margin-left: 0;
     }
 }
+.burger-toggle-container {
     display: block;
     position: static;
     margin-left: 1rem;
@@ -141,6 +154,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 @media (max-width: 575px) {
+    .carousel-caption h1#section-header,
+    .carousel-caption h1,
+    .carousel-caption p {
+        color: #fff !important;
+        text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
+        font-family: 'Merienda', cursive, Arial, sans-serif !important;
+        font-weight: 700 !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: #fff !important;
+        background-clip: initial !important;
+    }
     .card img {
         max-height: 140px;
     }
@@ -210,12 +235,6 @@ h1, h2, h3, h4, h5, h6 {
     background-clip: initial !important;
 }
 /* Force white text for carousel captions and section headers on all screen sizes */
-.carousel-caption h1, .carousel-caption p, #section-header, .section-header-gradient, .card-title.section-header-gradient {
-    color: #fff !important;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18) !important;
-    font-family: 'Merienda', cursive, Arial, sans-serif !important;
-    font-weight: 700 !important;
-}
 .carousel-caption h1,
 .carousel-caption p {
     color: #fff !important;
