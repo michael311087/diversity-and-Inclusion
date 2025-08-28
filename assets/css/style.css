@@ -10,15 +10,6 @@
 	--primary-text: #222;
 }
 
-<<<<<<< HEAD
-/* Section Header Gradient Text */
-.section-header-gradient {
-	background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	color: transparent;
-=======
 /* Gradient and font styles for section headers and carousel captions */
 .section-header-gradient:not(.card-title),
 .carousel-caption h1,
@@ -40,7 +31,6 @@
 	text-shadow: 0 2px 8px rgba(33,147,176,0.12);
 	filter: none !important;
 	font-family: 'Merienda', cursive;
->>>>>>> newbranch
 	font-family: 'Merienda', cursive;
 }
 
