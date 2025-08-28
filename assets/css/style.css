@@ -168,20 +168,26 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Dark mode toggle button styles */
 #darkModeToggle {
-    background: #fff;
-    color: var(--primary-gradient-end);
-    border: 1px solid var(--primary-gradient-end);
-    font-weight: 700;
-    font-family: 'Merienda', cursive, Arial, sans-serif;
-    letter-spacing: 0.5px;
-    font-size: 1.1rem;
-    transition: background 0.2s, color 0.2s;
+    background: #fff !important;
+    color: var(--primary-gradient-end) !important;
+    border: 1px solid var(--primary-gradient-end) !important;
+    font-weight: 700 !important;
+    font-family: 'Merienda', cursive, Arial, sans-serif !important;
+    letter-spacing: 0.5px !important;
+    font-size: 1.1rem !important;
+    transition: background 0.2s, color 0.2s !important;
+    box-shadow: none !important;
+    outline: none !important;
+    padding: 0.5rem 1.25rem !important;
+    border-radius: 0.5rem !important;
 }
 body.manual-dark #darkModeToggle,
 body[data-theme="dark"] #darkModeToggle {
-    background: #222;
-    color: var(--primary-gradient-start);
-    border: 1px solid var(--primary-gradient-start);
+    background: #222 !important;
+    color: var(--primary-gradient-start) !important;
+    border: 1px solid var(--primary-gradient-start) !important;
+    box-shadow: none !important;
+    outline: none !important;
 }
 
 /* Dark mode styles for body, navbar, cards, list items, section headers */
