@@ -11,6 +11,12 @@
 }
 
 /* Gradient and font styles for section headers and carousel captions */
+/* Section headers: add scroll margin and padding for anchor navigation */
+.section-header-gradient {
+	scroll-margin-top: 90px;
+	padding-top: 1.5rem;
+}
+
 .section-header-gradient:not(.card-title),
 .carousel-caption h1,
 .carousel-caption p {
