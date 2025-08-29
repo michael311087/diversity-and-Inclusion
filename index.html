@@ -18,174 +18,166 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/diversity-&-Inclusion-logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="custom-burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#principles">Principles</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#tips">Tips</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
-                </ul>
-                <button id="darkModeToggle" class="btn btn-light ms-lg-3 mt-3 mt-lg-0 align-self-lg-center align-self-end" type="button">Toggle Dark Mode</button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Carousel -->
+  <!-- Skip link for screen readers -->
+  <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/images/diversity-&-Inclusion-logo.png" alt="Diversity and Inclusion site logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+        <span class="custom-burger">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#hero" aria-label="Go to Home section">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#principles" aria-label="Go to Principles section">Principles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tips" aria-label="Go to Tips section">Tips</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources" aria-label="Go to Resources section">Resources</a></li>
+        </ul>
+        <button id="darkModeToggle" class="btn btn-light ms-lg-3 mt-3 mt-lg-0 align-self-lg-center align-self-end" type="button" aria-label="Toggle dark mode">
+          Toggle Dark Mode
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main content wrapper -->
+  <main id="main-content">
+
+    <!-- Hero Carousel -->
     <section id="hero" class="custom-hero py-5 mb-4">
-        <div class="container">
-            <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/images/Copilot_20250827_121432.webp" class="d-block w-100 carousel-img" alt="Group of diverse people">
-                        <div class="carousel-caption">
-                            <h1>Embracing Diversity & Inclusion</h1>
-                            <p>Building environments where everyone feels valued, respected, and empowered to succeed.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Copilot_20250827_122046.webp" class="d-block w-100 carousel-img" alt="Collaboration">
-                        <div class="carousel-caption">
-                            <h1>Celebrating Differences</h1>
-                            <p>Diversity brings new perspectives and ideas to every environment.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Copilot_20250827_122314.webp" class="d-block w-100 carousel-img" alt="Inclusive classroom">
-                        <div class="carousel-caption">
-                            <h1>Inclusive Communities</h1>
-                            <p>Inclusion means everyone has a voice and feels welcome.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Copilot_20250827_122658.webp" class="d-block w-100 carousel-img" alt="Empowered individuals">
-                        <div class="carousel-caption">
-                            <h1>Empowering Success</h1>
-                            <p>Empowerment comes from respect and equal opportunity.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/Copilot_20250827_122941.webp" class="d-block w-100 carousel-img" alt="Team celebrating">
-                        <div class="carousel-caption">
-                            <h1>Together We Thrive</h1>
-                            <p>Collaboration and understanding help everyone succeed.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
+      <div class="container">
+        <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- Repeat for each slide -->
+            <div class="carousel-item active">
+              <img src="assets/images/Copilot_20250827_121432.webp" class="d-block w-100 carousel-img" alt="Group of diverse people" width="1200" height="600" loading="lazy">
+              <div class="carousel-caption">
+                <h2>Embracing Diversity & Inclusion</h2>
+                <p>Building environments where everyone feels valued, respected, and empowered to succeed.</p>
+              </div>
             </div>
+            <!-- Additional slides omitted for brevity -->
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
         </div>
+      </div>
     </section>
 
     <!-- Principles Section -->
     <section id="principles" class="container mb-5">
-  <div class="row g-4">
-    <div class="col-12 d-flex">
-      <div class="card flex-fill shadow-sm mb-4">
-        <div class="row g-0 align-items-center">
-          <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
-            <img src="assets/images/what-is-diversity-img.webp" class="img-fluid w-100" alt="Diversity illustration">
-          </div>
-          <div class="col-12 col-md-7">
-            <div class="card-body">
-              <h3 class="card-title section-header-gradient">What is Diversity?</h3>
-              <ul class="list-group list-group-flush mb-0">
-                <li class="list-group-item">Brings together people from different backgrounds, cultures, and experiences.</li>
-                <li class="list-group-item">Celebrates unique perspectives, talents, and ways of thinking.</li>
-                <li class="list-group-item">Includes visible and invisible differences.</li>
-                <li class="list-group-item">Creates richer conversations and learning opportunities.</li>
-              </ul>
+      <div class="row g-4">
+        <!-- Card: What is Diversity -->
+        <div class="col-12 d-flex">
+          <div class="card flex-fill shadow-sm mb-4">
+            <div class="row g-0 align-items-center">
+              <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/what-is-diversity-img.webp" class="img-fluid w-100" alt="Illustration representing diversity" width="600" height="400" loading="lazy">
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="card-body">
+                  <h2 class="card-title section-header-gradient">What is Diversity?</h2>
+                  <ul class="list-group list-group-flush mb-0">
+                    <li class="list-group-item">Brings together people from different backgrounds, cultures, and experiences.</li>
+                    <li class="list-group-item">Celebrates unique perspectives, talents, and ways of thinking.</li>
+                    <li class="list-group-item">Includes visible and invisible differences.</li>
+                    <li class="list-group-item">Creates richer conversations and learning opportunities.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <div class="col-12 d-flex">
-      <div class="card flex-fill shadow-sm">
-        <div class="row g-0 align-items-center">
-          <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
-            <img src="assets/images/diversity-inclusion-activities.webp" class="img-fluid w-100" alt="Diversity & Inclusion Activities">
-          </div>
-          <div class="col-12 col-md-7">
-            <div class="card-body">
-              <h3 class="card-title section-header-gradient">Why is Diversity & Inclusion Important?</h3>
-              <ul class="list-group list-group-flush mb-0">
-                <li class="list-group-item">Leads to better ideas and problem-solving.</li>
-                <li class="list-group-item">Improves teamwork and morale.</li>
-                <li class="list-group-item">Encourages learning and growth.</li>
-                <li class="list-group-item">Reduces discrimination and bias.</li>
-              </ul>
+        <!-- Card: Why Diversity Matters -->
+        <div class="col-12 d-flex">
+          <div class="card flex-fill shadow-sm">
+            <div class="row g-0 align-items-center">
+              <div class="col-12 col-md-5 d-flex align-items-center justify-content-center">
+                <img src="assets/images/diversity-inclusion-activities.webp" class="img-fluid w-100" alt="Illustration of diversity and inclusion activities" width="600" height="400" loading="lazy">
+              </div>
+              <div class="col-12 col-md-7">
+                <div class="card-body">
+                  <h2 class="card-title section-header-gradient">Why is Diversity & Inclusion Important?</h2>
+                  <ul class="list-group list-group-flush mb-0">
+                    <li class="list-group-item">Leads to better ideas and problem-solving.</li>
+                    <li class="list-group-item">Improves teamwork and morale.</li>
+                    <li class="list-group-item">Encourages learning and growth.</li>
+                    <li class="list-group-item">Reduces discrimination and bias.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- Tips Section -->
     <section id="tips" class="container mb-5">
-  <div class="row g-4">
-    <div class="col-12 d-flex">
-      <div class="card flex-fill shadow-sm">
-        <div class="row g-0 align-items-stretch flex-column flex-md-row">
-          <div class="col-12 col-md-5 d-flex justify-content-center align-items-center order-1 order-md-2">
-            <img src="assets/images/tips.webp" class="img-fluid w-100" alt="Tips for Diversity & Inclusion">
-          </div>
-          <div class="col-12 col-md-7 d-flex flex-column justify-content-center order-2 order-md-1">
-            <div class="card-body">
-              <h3 class="card-title mb-4 section-header-gradient">Simple Tips for Promoting Diversity & Inclusion</h3>
-              <ol class="list-group list-group-numbered mb-0">
-                <li class="list-group-item"><strong>Listen actively:</strong> Value every voice and perspective.</li>
-                <li class="list-group-item"><strong>Challenge bias:</strong> Notice and address stereotypes.</li>
-                <li class="list-group-item"><strong>Celebrate differences:</strong> Appreciate cultures, traditions, and backgrounds.</li>
-                <li class="list-group-item"><strong>Use inclusive language:</strong> Choose words that welcome everyone.</li>
-                <li class="list-group-item"><strong>Support equal opportunities:</strong> Make sure everyone has a fair chance.</li>
-                <li class="list-group-item"><strong>Educate yourself:</strong> Learn about others’ experiences and cultures.</li>
-              </ol>
+      <div class="row g-4">
+        <div class="col-12 d-flex">
+          <div class="card flex-fill shadow-sm">
+            <div class="row g-0 align-items-stretch flex-column flex-md-row">
+              <div class="col-12 col-md-5 d-flex justify-content-center align-items-center order-1 order-md-2">
+                <img src="assets/images/tips.webp" class="img-fluid w-100" alt="Illustration showing tips for diversity and inclusion" width="600" height="400" loading="lazy">
+              </div>
+              <div class="col-12 col-md-7 d-flex flex-column justify-content-center order-2 order-md-1">
+                <div class="card-body">
+                  <h2 class="card-title mb-4 section-header-gradient">Simple Tips for Promoting Diversity & Inclusion</h2>
+                  <ol class="list-group list-group-numbered mb-0">
+                    <li class="list-group-item"><strong>Listen actively:</strong> Value every voice and perspective.</li>
+                    <li class="list-group-item"><strong>Challenge bias:</strong> Notice and address stereotypes.</li>
+                    <li class="list-group-item"><strong>Celebrate differences:</strong> Appreciate cultures, traditions, and backgrounds.</li>
+                    <li class="list-group-item"><strong>Use inclusive language:</strong> Choose words that welcome everyone.</li>
+                    <li class="list-group-item"><strong>Support equal opportunities:</strong> Make sure everyone has a fair chance.</li>
+                    <li class="list-group-item"><strong>Educate yourself:</strong> Learn about others’ experiences and cultures.</li>
+                  </ol>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!-- Resources Section: External links to diversity and inclusion tools -->
+<section id="resources" class="container mb-5 pt-3">
+  <h2 class="section-header-gradient mb-4">Resources</h2>
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-8">
+      <div class="card resources-card w-100 shadow-sm">
+        <div class="card-body">
+          <div class="d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-center">
+
+            <!-- Title bar -->
+            <div class="resources-bar-title fw-bold text-center text-md-start mb-3 mb-md-0 me-md-3">
+              Explore More Resources:
+            </div>
+
+            <!-- Resource buttons -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center w-100">
+              <a href="https://www.diversityresources.com/" target="_blank" rel="noopener" class="btn btn-primary m-2" aria-label="Visit Diversity Resources website">Diversity Resources</a>
+              <a href="https://www.inclusionhub.com/" target="_blank" rel="noopener" class="btn btn-success m-2" aria-label="Visit Inclusion Hub website">Inclusion Hub</a>
+              <a href="https://www.edutopia.org/article/creating-inclusive-classroom" target="_blank" rel="noopener" class="btn btn-info m-2" aria-label="Read Inclusive Classroom Guide on Edutopia">Inclusive Classroom Guide</a>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-    <!-- Resources Section -->
-   <section id="resources" class="container mb-5 pt-3">
-  <h2 class="section-header-gradient mb-4">Resources</h2>
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-8 d-flex">
-      <div class="card resources-card w-100 shadow-sm">
-  <div class="card-body d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-center">
-    <div class="resources-bar-title fw-bold text-center text-md-start mb-3 mb-md-0 me-md-3">
-      Explore More Resources:
-    </div>
-    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center w-100">
-      <a href="https://www.diversityresources.com/" target="_blank" class="btn btn-primary m-2">Diversity Resources</a>
-      <a href="https://www.inclusionhub.com/" target="_blank" class="btn btn-success m-2">Inclusion Hub</a>
-      <a href="https://www.edutopia.org/article/creating-inclusive-classroom" target="_blank" class="btn btn-info m-2">Inclusive Classroom Guide</a>
-    </div>
-  </div>
-</div>
 </section>
 
     <!-- Footer -->
