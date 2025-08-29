@@ -43,6 +43,13 @@ h1, h2, h3, h4, h5, h6 {
     background: none;
 }
 
+/* Logo in Navbar */
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
 /* Hero section */
 .custom-hero {
     background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
@@ -74,6 +81,8 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff;
     border-radius: 0 0 1rem 1rem;
     transition: box-shadow 0.2s;
+    max-height: none !important;
+    overflow-y: visible !important;
 }
 .card-body:hover {
     box-shadow: 0 4px 24px rgba(33, 147, 176, 0.18);
@@ -87,12 +96,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     margin: 0 auto;
     max-height: 400px;
-}
-
-/* Remove all scroll effects from card bodies on all screen sizes */
-.card-body {
-    max-height: unset !important;
-    overflow-y: visible !important;
 }
 
 /* Responsive stacking for cards: image above text on small screens */
@@ -250,103 +253,6 @@ h1, h2, h3, h4, h5, h6 {
         border-color: var(--primary-gradient-end);
         background: #e3f6fd;
     }
-}
-
-/* Burger menu toggle button placement */
-.burger-toggle-container {
-    display: block;
-    position: static;
-    margin-left: 1rem;
-}
-.burger-toggle-container button {
-    position: static;
-    margin-left: 1rem;
-}
-@media (max-width: 991px) {
-    .navbar-collapse.show .burger-toggle-container {
-        position: fixed;
-        right: 1.5rem;
-        bottom: 1.5rem;
-        z-index: 9999;
-        display: block;
-        margin-left: 0;
-    }
-    .navbar-collapse:not(.show) .burger-toggle-container {
-        display: none;
-    }
-}
-
-/* Navbar collapse inner flex structure */
-.navbar-collapse-inner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-@media (min-width: 992px) {
-    .navbar-collapse-inner {
-        flex-direction: row;
-        align-items: center;
-    }
-    #darkModeToggle {
-        margin-left: 1rem;
-        margin-top: 0;
-        align-self: center;
-    }
-}
-@media (max-width: 991px) {
-    #darkModeToggle {
-        align-self: flex-end;
-        margin-top: 1rem;
-        margin-left: 0;
-    }
-}
-
-/* Remove scroll effect and stack card text under image on small screens */
-@media (max-width: 991px) {
-  .card .row.g-0 {
-    flex-direction: column !important;
-  }
-  .card .col-md-7,
-  .card .col-md-5 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-  }
-  .card img {
-    margin-bottom: 0.5rem;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-  }
-  .card-body {
-    margin-top: 0.5rem;
-    text-align: center;
-  }
-}
-@media (max-width: 575px) {
-  .card-body {
-    max-height: unset !important;
-    overflow-y: visible !important;
-    margin-top: 0.5rem;
-    text-align: center;
-  }
-  .card .row.g-0 {
-    flex-direction: column !important;
-  }
-  .card img {
-    margin-bottom: 0.5rem;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-  }
-  .card .col-md-7,
-  .card .col-md-5 {
-    width: 100% !important;
-    max-width: 100% !important;
-    flex: none !important;
-  }
 }
 
 /* Dark mode styles */
