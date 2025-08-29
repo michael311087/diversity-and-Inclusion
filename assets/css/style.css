@@ -60,9 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Section header gradient text */
 .section-header-gradient {
     background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
     color: transparent;
     font-family: 'Merienda', cursive, Arial, sans-serif;
     font-weight: 700;
@@ -284,30 +284,25 @@ body.manual-dark,
     width: 100%;
     height: 3px;
     margin: 4px 0;
-    background: #fff !important;
     border-radius: 2px;
     transition: background 0.2s;
 }
 
-/* Make sure the toggler button outline is visible in both modes */
-.navbar-toggler {
-    border: 2px solid #fff !important;
-    box-shadow: none;
-}
-
-/* In light mode, make burger icon dark for visibility */
+/* Light mode: dark burger bars */
 body:not(.manual-dark) .custom-burger span,
 [data-theme]:not([data-theme="dark"]) .custom-burger span {
     background: #222 !important;
 }
-body:not(.manual-dark) .navbar-toggler {
-    border-color: #222 !important;
-}
 
-/* In dark mode, burger icon and outline are white */
+/* Dark mode: white burger bars */
 body.manual-dark .custom-burger span,
 [data-theme="dark"] .custom-burger span {
     background: #fff !important;
+}
+
+/* Toggler outline: match burger bar color */
+body:not(.manual-dark) .navbar-toggler {
+    border-color: #222 !important;
 }
 body.manual-dark .navbar-toggler,
 [data-theme="dark"] .navbar-toggler {
