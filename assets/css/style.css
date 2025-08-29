@@ -1,310 +1,313 @@
-/* Google Fonts: Merienda for headings and body */
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+/* Google Fonts: Merienda for headings */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
 
-/* Project Color Variables */
+/* Root variables */
 :root {
-    --primary-gradient-start: #6dd5ed;
-    --primary-gradient-end: #2193b0;
-    --primary-dark: #212529;
-    --primary-light: #fff;
-    --primary-text: #222;
+  --gradient-start: #6dd5ed;
+  --gradient-end: #2193b0;
+  --text-light: #fff;
+  --text-dark: #222;
+  --hover-bg: #e3f6fd;
+  --hover-accent: #f0fbff;
 }
 
-/* Base body and headings */
+/* Base styles */
 body {
-    font-family: 'Merienda', cursive, Arial, sans-serif;
-    background: var(--primary-light);
-    color: var(--primary-text);
-    min-height: 100vh;
-}
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Merienda', cursive, Arial, sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+  background: #f8f9fa;
+  color: var(--text-dark);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  min-height: 100vh;
 }
 
-/* Navbar styles */
-.custom-navbar {
-    background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
-    color: #fff;
-    box-shadow: 0 2px 8px rgba(33, 147, 176, 0.12);
-    border-radius: 0;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
+
+/* Navbar */
+.custom-navbar {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: var(--text-light);
+  box-shadow: 0 2px 8px rgba(33, 147, 176, 0.12);
+}
+
 .custom-navbar .navbar-brand,
 .custom-navbar .nav-link {
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.5px;
+  color: var(--text-light) !important;
+  font-weight: 600;
 }
+
 .custom-navbar .nav-link.active {
-    text-decoration: underline;
-    color: #ffb347 !important;
-    font-weight: 700;
-    background: none;
+  text-decoration: underline;
+  color: #ffb347 !important;
 }
 
-/* Logo in Navbar */
 .navbar-brand img {
-    height: 40px;
-    width: auto;
-    vertical-align: middle;
+  height: 40px;
+  width: auto;
+  vertical-align: middle;
 }
 
-/* Hero section */
+/* Hero */
 .custom-hero {
-    background: linear-gradient(90deg, var(--primary-gradient-start) 0%, var(--primary-gradient-end) 100%);
-    color: #fff;
-    box-shadow: 0 4px 24px rgba(33, 147, 176, 0.12);
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  color: var(--text-light);
+  box-shadow: 0 4px 24px rgba(33, 147, 176, 0.12);
 }
 
-/* Section header gradient text */
+/* Section header */
 .section-header-gradient {
-    background: linear-gradient(90deg, var(--primary-gradient-start), var(--primary-gradient-end));
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    font-family: 'Merienda', cursive, Arial, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    scroll-margin-top: 90px;
-    padding-top: 1.5rem;
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  scroll-margin-top: 90px;
+  padding-top: 1.5rem;
 }
 
-/* Card styles */
+/* Cards */
 .card {
-    border-radius: 1rem;
-    box-shadow: 0 2px 12px rgba(33, 147, 176, 0.08);
-    border: none;
-}
-.card-body {
-    background: #fff;
-    border-radius: 0 0 1rem 1rem;
-    transition: box-shadow 0.2s;
-    max-height: none !important;
-    overflow-y: visible !important;
-}
-.card-body:hover {
-    box-shadow: 0 4px 24px rgba(33, 147, 176, 0.18);
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(33, 147, 176, 0.08);
+  border: none;
+  overflow: hidden;
+  transition: all 0.3s ease;
 }
 
-/* Card image responsiveness */
+.card:hover {
+  box-shadow: 0 6px 32px rgba(33, 147, 176, 0.3);
+  background-color: var(--hover-bg);
+  border: 1px solid var(--gradient-end);
+}
+
 .card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    max-height: 400px;
+  transition: transform 0.3s ease;
 }
 
-/* Responsive stacking for cards: image above text on small screens */
-@media (max-width: 991px) {
-    .card {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .card img {
-        margin-bottom: 0.5rem;
-        max-width: 100%;
-        width: 100%;
-        margin: 0 auto;
-        display: block;
-    }
-    .card-body {
-        margin-top: 0.5rem;
-        text-align: center;
-    }
+.card:hover img {
+  transform: scale(1.05);
 }
 
-/* Section header responsiveness */
-@media (max-width: 991px) {
-    .section-header-gradient {
-        font-size: 1.25rem;
-    }
-}
-@media (max-width: 575px) {
-    .section-header-gradient {
-        font-size: 1.1rem;
-        padding-top: 1rem;
-    }
+.card-body {
+  background: #fff;
+  border-radius: 0 0 1rem 1rem;
 }
 
-/* List group item styles */
-.list-group-item {
-    background: #f8f9fa;
-    border: none;
-    transition: background 0.2s, color 0.2s;
+/* Text highlight on direct hover */
+.card-title:hover,
+.resources-bar-title:hover {
+  background-color: var(--hover-bg);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
 }
+
 .list-group-item:hover {
-    background: var(--primary-gradient-start);
-    color: #fff;
+  background-color: var(--hover-accent);
+  transition: background-color 0.3s ease;
 }
 
-/* Carousel image styles */
-.carousel-inner img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-    max-width: 32em;
-    border-radius: 0.5rem;
+/* Card image fix */
+.card .row > .col-md-5 img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 300px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 1rem;
 }
 
-/* Carousel caption always below image */
-.carousel-caption {
-    position: static !important;
-    background: rgba(0,0,0,0.05);
-    margin-top: 0.25rem;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    text-shadow: none;
-    border-radius: 0.25rem;
-    box-shadow: 0 1px 4px rgba(33,147,176,0.06);
-    max-width: 32em;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    word-break: break-word;
-    overflow: visible;
-    text-align: center;
-}
-.carousel-caption h1 {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-    color: #fff !important;
-    text-align: center;
-}
-.carousel-caption p {
-    font-size: 1rem;
-    margin-bottom: 0;
-    color: #fff !important;
-    text-align: center;
+#tips .card img {
+  max-width: 500px;
 }
 
-/* Responsive tweaks for carousel */
+/* Responsive cards */
 @media (max-width: 991px) {
-    .carousel-inner img,
-    .carousel-caption {
-        max-width: 98vw;
-    }
-    .carousel-caption {
-        padding: 0.25rem 0.5rem;
-    }
-    .carousel-caption h1 {
-        font-size: 1.1rem;
-    }
-    .carousel-caption p {
-        font-size: 0.9rem;
-    }
-}
-@media (max-width: 575px) {
-    .carousel-inner img,
-    .carousel-caption {
-        max-width: 99vw;
-    }
-    .carousel-caption {
-        padding: 0.15rem 0.25rem;
-        font-size: 0.9rem;
-    }
-    .carousel-caption h1 {
-        font-size: 0.95rem;
-    }
-    .carousel-caption p {
-        font-size: 0.85rem;
-    }
-}
-
-/* Footer styles */
-.footer {
-    background: linear-gradient(90deg, var(--primary-gradient-end), var(--primary-gradient-start));
-    color: #fff;
-    box-shadow: 0 -2px 8px rgba(33, 147, 176, 0.12);
-    border-radius: 0;
-}
-.footer .social-links a {
-    color: #fff !important;
-    font-size: 1.5rem;
-    transition: color 0.2s;
-}
-.footer .social-links a:hover {
-    color: #ffb347 !important;
-    text-decoration: none;
-}
-
-/* Card hover effect for non-touch devices */
-@media (pointer: fine) {
-    .card:hover {
-        box-shadow: 0 4px 24px rgba(33, 147, 176, 0.18);
-        transform: translateY(-4px) scale(1.03);
-        border-color: var(--primary-gradient-end);
-        background: #e3f6fd;
-    }
-}
-
-/* Dark mode styles */
-body.manual-dark,
-[data-theme="dark"] body {
-    background: #222 !important;
-    color: #eee !important;
-}
-.custom-navbar.manual-dark,
-[data-theme="dark"] .custom-navbar {
-    background: linear-gradient(90deg, #222, #444) !important;
-    color: #fff !important;
-}
-.card.manual-dark,
-[data-theme="dark"] .card {
-    background: #333 !important;
-    color: #eee !important;
-}
-.footer.manual-dark,
-[data-theme="dark"] .footer {
-    background: linear-gradient(90deg, #444, #222) !important;
-    color: #fff !important;
-}
-
-/* Custom burger menu icon: always white, visible in dark mode */
-.custom-burger {
-    display: inline-flex;
+  .card {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1.8em;
-    height: 1.8em;
-    cursor: pointer;
-    background: none;
-    border: none;
-}
-.custom-burger span {
-    display: block;
-    width: 100%;
-    height: 3px;
-    margin: 4px 0;
-    border-radius: 2px;
-    transition: background 0.2s;
+  }
+
+  .card-body {
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .card .row > .col-md-5 img {
+    border-radius: 1rem 1rem 0 0;
+    max-height: none;
+  }
 }
 
-/* Light mode: dark burger bars */
+/* Carousel */
+.carousel-item {
+  background: linear-gradient(90deg, var(--gradient-start), var(--gradient-end));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.carousel-caption {
+  position: static;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  color: var(--text-light);
+  text-align: center;
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Social icons */
+.social-links a,
+.social-links i {
+  color: var(--text-light) !important;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover,
+.social-links i:hover {
+  color: #ffb347 !important;
+  transform: scale(1.2);
+}
+
+/* Resources */
+.resources-card {
+  border-radius: 1rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+.resources-bar-title {
+  font-size: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.resources-card .btn {
+  min-width: 200px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.resources-card .btn:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(90deg, var(--gradient-end), var(--gradient-start));
+  color: var(--text-light);
+  font-size: 1rem;
+  border-top: 1px solid #eaeaea;
+}
+
+/* Burger menu */
+.custom-burger {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1.8em;
+  height: 1.8em;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.custom-burger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: background 0.2s;
+}
+
 body:not(.manual-dark) .custom-burger span,
 [data-theme]:not([data-theme="dark"]) .custom-burger span {
-    background: #222 !important;
+  background: var(--text-dark) !important;
 }
 
-/* Dark mode: white burger bars */
 body.manual-dark .custom-burger span,
 [data-theme="dark"] .custom-burger span {
-    background: #fff !important;
+  background: var(--text-light) !important;
 }
 
-/* Toggler outline: match burger bar color */
-body:not(.manual-dark) .navbar-toggler {
-    border-color: #222 !important;
+/* Dark mode */
+body.manual-dark,
+[data-theme="dark"] body {
+  background: #222 !important;
+  color: #eee !important;
 }
-body.manual-dark .navbar-toggler,
-[data-theme="dark"] .navbar-toggler {
-    border-color: #fff !important;
+
+.custom-navbar.manual-dark,
+[data-theme="dark"] .custom-navbar {
+  background: linear-gradient(90deg, #222, #444) !important;
+}
+
+.card.manual-dark,
+[data-theme="dark"] .card {
+  background: #333 !important;
+  color: #eee !important;
+}
+
+.footer.manual-dark,
+[data-theme="dark"] .footer {
+  background: linear-gradient(90deg, #444, #222) !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .section-header-gradient {
+    font-size: 1.25rem;
+  }
+
+  .carousel-item {
+    height: 40vh;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-header-gradient {
+    font-size: 1.1rem;
+    padding-top: 1rem;
+  }
+
+  .carousel-item {
+    height: 30vh;
+  }
+
+  .carousel-caption {
+    padding: 0.5rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.85rem;
+  }
 }

@@ -48,9 +48,10 @@ An interactive, single-page website designed to educate users about diversity an
 To run locally:
 
 1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/yourusername/diversity-and-Inclusion.git
-   ```
+
+   bash
+  git clone <https://github.com/yourusername/diversity-and-Inclusion.git>
+
 2. **Open `index.html` in your browser.**
 
 Or visit the **live site**:  
@@ -62,7 +63,8 @@ All assets are local except for Bootstrap, Font Awesome, and Google Fonts, which
 
 ## File Structure
 
-```
+git clone [https://github.com/yourusername/diversity-and-Inclusion.git](https://github.com/yourusername/diversity-and-Inclusion.git)
+
 diversity-and-Inclusion/
 ├── assets/
 │   ├── css/
@@ -71,9 +73,6 @@ diversity-and-Inclusion/
 │   │   └── [project images]
 ├── index.html
 ├── README.md
-```
-
----
 
 ## Recent Improvements
 
